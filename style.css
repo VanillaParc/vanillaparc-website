@@ -131,6 +131,7 @@ a {
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom: 60px;
 }
 .news {
     display: flex;
@@ -165,6 +166,6 @@ a {
     margin-bottom: 16px;
 }
 
-.news-container div:last-child {
+.news2 {
     margin-top: 50px;
 }
