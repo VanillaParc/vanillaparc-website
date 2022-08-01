@@ -15,8 +15,8 @@
     font-weight: 700;
     font-stretch: normal;
 }
+
 :root {
-    --background-opacity: rgba(0, 0, 0, 0.1);
     --black: #252525;
 }
 
@@ -29,21 +29,17 @@
 }
 
 body {
-    overflow-x: hidden;
     font-family: "proxima-nova", sans-serif;
     color: var(--black);
 }
 
-p {
-    font-size: 18px;
-    color: var(--black);
-    font-family: "proxima-nova", sans-serif;
-}
 a {
     color: var(--black);
     text-decoration: none;
     font-family: "proxima-nova", sans-serif;
 }
+
+/*----------------------------------------------------------------*/
 
 ::-webkit-scrollbar {
     width: 16px;
@@ -62,28 +58,48 @@ a {
     background: #555;
 }
 
-.title-s {
+/*----------------------------------------------------------------*/
+
+.title-style {
     color: var(--black);
+    font-family: "proxima-nova", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 46px;
     text-decoration: none;
 }
+.p-style {
+    color: var(--black);
+    font-family: "proxima-nova", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.button-style {
+    display: inline-block;
+    padding: 12px;
+    padding-inline: 16px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0px 2px 0px #0079ba;
+    background-color: #00a8ff;
+    box-shadow: inset 4px 4px 0px #79d0ff, inset -4px -4px 0px #0079ba;
+    transition: all 200ms ease-in-out;
+}
+
+/*----------------------------------------------------------------*/
 
 .server-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     width: 100%;
     height: fit-content;
+    margin-block: 60px;
 }
-.server-info div {
-    width: 70vw;
-    height: 30vw;
-    margin: auto;
+.server-img {
+    width: 1110px;
+    height: 500px;
+    margin-inline: auto;
     background-image: url("https://assets.originrealms.com/cdn-cgi/image/format=webp,quality=90,fit=scale-down,width=1920/2021/03/Patrick_Blog.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,18 +107,24 @@ a {
     transition: all 200ms ease-in-out;
 }
 .server-info h1 {
-    width: 80%;
+    width: 1000px;
     margin-top: 30px;
+    margin-inline: auto;
     text-align: center;
 }
-.server-info p {
-    width: 60%;
-    margin-top: 10px;
+.server-description {
+    width: 800px;
+    margin-top: 16px;
+    margin-inline: auto;
     text-align: center;
 }
 
+/*----------------------------------------------------------------*/
+
 .news-container {
-    margin-inline: 222px;
+    width: 1110px;
+    height: fit-content;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -119,7 +141,6 @@ a {
     align-content: center;
     width: 100%;
     height: 310px;
-    margin: 40px;
 }
 #news-img1 {
     background-image: url("https://assets.originrealms.com/cdn-cgi/image/format=webp,quality=90,fit=scale-down,width=1920/2022/07/Summer_Blog.jpg");
@@ -128,15 +149,15 @@ a {
     background-image: url("https://assets.originrealms.com/cdn-cgi/image/format=webp,quality=90,fit=scale-down,width=1920/2022/03/Badlands_Blog.jpg");
 }
 .news-img {
-    width: 506px;
-    height: inherit;
+    width: 528px;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     transition: all 200ms ease-in-out;
 }
-.news div {
-    width: 506px;
+.news-text {
+    width: 528px;
 }
 
 .news-description {
@@ -144,15 +165,6 @@ a {
     margin-bottom: 16px;
 }
 
-.news-link {
-    display: inline-block;
-    padding: 12px;
-    padding-inline: 16px;
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none;
-    text-shadow: 0px 2px 0px #0079ba;
-    background-color: #00a8ff;
-    box-shadow: inset 4px 4px 0px #79d0ff, inset -4px -4px 0px #0079ba;
-    transition: all 200ms ease-in-out;
+.news-container div:last-child {
+    margin-top: 50px;
 }
